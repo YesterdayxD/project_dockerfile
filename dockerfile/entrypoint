@@ -1,0 +1,6 @@
+FROM 10.151.11.51:5000/tensorflow/tensorflow:1.14-cuda10-py36
+
+#ENTRYPOINT /etc/init.d/ssh start & 
+ENTRYPOINT service ssh restart && bash
+#CMD ["/etc/init.d/sshd start", "-D"]
+
