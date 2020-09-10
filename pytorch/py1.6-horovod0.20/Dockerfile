@@ -72,6 +72,7 @@ RUN pip --no-cache-dir install future typing
 RUN pip --no-cache-dir install numpy \
         #tensorflow-gpu==${TENSORFLOW_VERSION} \
         #keras \
+        tensorboard \
         h5py \
 && \
     rm -rf /root/.cache/pip/http/*
